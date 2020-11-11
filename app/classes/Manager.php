@@ -6,6 +6,6 @@ class Manager implements taskPlanning
 {
     public function taskPlanning($code)
     {
-        echo($code);
+        echo $code;
     }
 }

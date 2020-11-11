@@ -27,8 +27,8 @@ interface taskPlanning
     public function taskPlanning($input);
 }
 
-define("writeCode", "code writing");
-define("communicate", "communication with manager");
-define("taskPlanning", "task planning");
-define("testCode", "code testing");
-define("draw", "drawing");
+define('writeCode', 'code writing');
+define('communicate', 'communication with manager');
+define('taskPlanning', 'task planning');
+define('testCode', 'code testing');
+define('draw', 'drawing');

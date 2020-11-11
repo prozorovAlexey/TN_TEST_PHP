@@ -6,16 +6,16 @@ class Developer implements writeCode, testCode, communicate
 {
     public function writeCode($code)
     {
-        echo($code);
+        echo $code;
     }
 
     public function testCode($code)
     {
-        echo($code);
+        echo $code;
     }
 
     public function communicate($code)
     {
-        echo($code);
+        echo $code;
     }
 }

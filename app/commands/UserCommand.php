@@ -3,9 +3,9 @@
 namespace App\Commands;
 
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Input\InputArgument;
 
 class UserCommand extends Command
 {
@@ -21,16 +21,17 @@ class UserCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $role = self::ClassesNamespace . ucfirst($input->getArgument('role'));
+        $role = self::ClassesNamespace.ucfirst($input->getArgument('role'));
         if (!class_exists($role)) {
             $output->writeln('Wrong role input! Please, use "help user" for more info!');
         } else {
             $interfaces = class_implements($role);
             foreach ($interfaces as $interface) {
-                $interfaceShortName = substr(strrchr($interface, "\\"), 1);
+                $interfaceShortName = substr(strrchr($interface, '\\'), 1);
                 $output->writeln(constant($interfaceShortName));
             }
         }
+
         return 1;
     }
 }
