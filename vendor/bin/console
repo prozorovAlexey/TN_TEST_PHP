@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/../autoload.php';
+
+use Symfony\Component\Console\Application;
+use App\Commands\UserCommand;
+use App\Commands\CanCommand;
+
+$app = new Application();
+$app->addCommands([new UserCommand(),new CanCommand()]);
+$app->run();
