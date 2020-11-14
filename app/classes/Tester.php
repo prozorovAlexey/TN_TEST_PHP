@@ -4,18 +4,18 @@ namespace App\Classes;
 
 class Tester implements testCode, communicate, taskPlanning
 {
-    public function taskPlanning($code)
+    public function taskPlanning($input)
     {
-        echo($code);
+        echo($input);
     }
 
-    public function testCode($code)
+    public function testCode($input)
     {
-        echo($code);
+        echo($input);
     }
 
-    public function communicate($code)
+    public function communicate($input)
     {
-        echo($code);
+        echo($input);
     }
 }
