@@ -4,13 +4,13 @@ namespace App\Classes;
 
 class Designer implements draw, communicate
 {
-    public function draw($code)
+    public function draw($input)
     {
-        echo($code);
+        echo($input);
     }
 
-    public function communicate($code)
+    public function communicate($input)
     {
-        echo($code);
+        echo($input);
     }
 }
