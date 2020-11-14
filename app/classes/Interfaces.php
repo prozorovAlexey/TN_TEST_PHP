@@ -4,7 +4,7 @@ namespace App\Classes;
 
 interface writeCode
 {
-    public function writeCode($code);
+    public function writeCode($input);
 }
 
 interface draw
