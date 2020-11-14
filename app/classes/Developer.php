@@ -4,18 +4,18 @@ namespace App\Classes;
 
 class Developer implements writeCode, testCode, communicate
 {
-    public function writeCode($code)
+    public function writeCode($input)
     {
-        echo($code);
+        echo($input);
     }
 
-    public function testCode($code)
+    public function testCode($input)
     {
-        echo($code);
+        echo($input);
     }
 
-    public function communicate($code)
+    public function communicate($input)
     {
-        echo($code);
+        echo($input);
     }
 }
