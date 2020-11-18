@@ -1,0 +1,12 @@
+{
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "symfony/console": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Console\\": "app"
+        },
+        "classmap": ["app"]
+    }
+}
