@@ -15,7 +15,6 @@ class CanCommand extends Command
     {
         $this->setName('can')
             ->setDescription('Output what user can')
-//            ->setHelp('Demonstration of custom commands created by Symfony Console component.')
             ->addArgument('role', InputArgument::REQUIRED, 'Pass the userrole. 
             Possible roles: developer, tester, designer, manager.')
             ->addArgument('action', InputArgument::REQUIRED, 'Pass the action. 
